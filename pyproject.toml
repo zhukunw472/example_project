@@ -1,3 +1,10 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = [
+    "setuptools",
+]
+
+[project]
 name = "example_project"
 version = "0.0.1a1"
 license = "MIT"
