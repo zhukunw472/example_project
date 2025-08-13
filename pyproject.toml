@@ -3,10 +3,6 @@ build-backend = "setuptools.build_meta"
 requires = [
     "setuptools",
 ]
-[project.optional-dependencies]
-docs = [
-    "mkdocs-material",
-]
 [project]
 name = "example_project"
 version = "0.0.1a1"
@@ -15,3 +11,8 @@ license-files = ["LICENSE.txt"]
 authors = [
     {name = "Maggie May", email = "maggie.may@gmail.com"}
 ]
+[project.optional-dependencies]
+docs = [
+    "mkdocs-material",
+]
+
