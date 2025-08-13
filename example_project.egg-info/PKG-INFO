@@ -4,4 +4,6 @@ Version: 0.0.1a1
 Author-email: Maggie May <maggie.may@gmail.com>
 License-Expression: MIT
 License-File: LICENSE.txt
+Provides-Extra: docs
+Requires-Dist: mkdocs-material; extra == "docs"
 Dynamic: license-file
