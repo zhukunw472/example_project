@@ -4,7 +4,7 @@ requires = [
     "setuptools",
 ]
 [project]
-name = "example_project"
+name = "mygeopy"
 version = "0.0.1a1"
 license = "MIT"
 license-files = ["LICENSE.txt"]
@@ -13,6 +13,6 @@ authors = [
 ]
 [project.optional-dependencies]
 docs = [
-    "mkdocs-material",
+    "mkdocs-material"
 ]
 
