@@ -1,18 +1,20 @@
 [build-system]
 build-backend = "setuptools.build_meta"
-requires = [
-    "setuptools",
-]
+requires = ["setuptools"]
+
 [project]
 name = "mygeopy"
-version = "0.0.1a1"
+version = "0.1.0a0"
+description = "My Python package for working with geometry."
+authors = [{name = "<Your name>", email="Your_email@domain.com"}]
 license = "MIT"
 license-files = ["LICENSE.txt"]
-authors = [
-    {name = "Maggie May", email = "maggie.may@gmail.com"}
-]
+
+[project.urls]
+Homepage = "https://github.com/zhukunw472/example_project"
 [project.optional-dependencies]
-docs = [
-    "mkdocs-material"
-]
+tests = ["pytest"]
+
+[tool.pytest.ini_options]
+addopts = "--doctest-modules"
 
