@@ -14,6 +14,7 @@ authors = [
 [project.optional-dependencies]
 docs = [
     "mkdocs-material",
+    "mkdocs-jupyter"
 ]
 [tool.setuptools]
 packages = ["example_project"]
