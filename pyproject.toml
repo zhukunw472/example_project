@@ -15,4 +15,5 @@ authors = [
 docs = [
     "mkdocs-material",
 ]
-
+[tool.setuptools]
+packages = ["example_project"]
