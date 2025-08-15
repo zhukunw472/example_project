@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+#-*- coding: utf-8 -*-
 """
 Created on Mon Jun 16 23:24:44 2025
 
@@ -8,6 +8,9 @@ Created on Mon Jun 16 23:24:44 2025
 '''
 main file for the design of the automated lifting setup
 '''
+
+
+
 
 '''
 import motordesign_keyelements as fun1

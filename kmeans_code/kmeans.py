@@ -84,26 +84,28 @@ def Kmeans(data, centroids): #centroids is a list of K-points as initial centroi
     plt.scatter(list_centroidslist[critical_index][:, 0], list_centroidslist[critical_index][:, 1])
     plt.show()
 
-import numpy as np
-import matplotlib.pyplot as plt
 
-#Initialize three bivariate Gaussians as shown in the question
-np.random.seed(1)
-mean = np.array([3.0,1.0])
-cov = np.array([[0.9,0.3],[0.3,0.9]])
-X0 = np.random.multivariate_normal(mean,cov,1000)
-mean = np.array([-1.0,3.0])
-cov = np.array([[0.9,0.3],[0.3,0.9]])
-X1 = np.random.multivariate_normal(mean,cov,1000)
-mean = np.array([-5.0,2.0])
-cov = np.array([[0.9,0.3],[0.3,0.9]])
-X2 = np.random.multivariate_normal(mean,cov,1000)
-X = np.concatenate((X0,X1,X2),axis=0)  #X is the data
-print(X.shape)
+if __name__ == "__main__":
+    import numpy as np
+    import matplotlib.pyplot as plt
 
-#Set up the centroids
-CENTROIDS = np.array([[0.4, 0.3], [0.1, 0.4], [-2.0, 2.0]]).reshape(3, 2)
-#print(CENTROIDS[0][0])
+    #Initialize three bivariate Gaussians as shown in the question
+    np.random.seed(1)
+    mean = np.array([3.0,1.0])
+    cov = np.array([[0.9,0.3],[0.3,0.9]])
+    X0 = np.random.multivariate_normal(mean,cov,1000)
+    mean = np.array([-1.0,3.0])
+    cov = np.array([[0.9,0.3],[0.3,0.9]])
+    X1 = np.random.multivariate_normal(mean,cov,1000)
+    mean = np.array([-5.0,2.0])
+    cov = np.array([[0.9,0.3],[0.3,0.9]])
+    X2 = np.random.multivariate_normal(mean,cov,1000) 
+    X = np.concatenate((X0,X1,X2),axis=0)  #X is the data
+    print(X.shape)
 
-#Test the Kmeans algorithm by calling the function
-Kmeans(X, CENTROIDS)
+    #Set up the centroids
+    CENTROIDS = np.array([[0.4, 0.3], [0.1, 0.4], [-2.0, 2.0]]).reshape(3, 2)
+    #print(CENTROIDS[0][0])
+
+    #Test the Kmeans algorithm by calling the function
+    Kmeans(X, CENTROIDS)

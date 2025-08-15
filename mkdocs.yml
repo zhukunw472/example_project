@@ -1,4 +1,10 @@
 site_name: My Docs from URSSI Package Documentation
-site_url: https://timmonko.github.io/urssi-docs/ 
+site_url: https://zhukunw472.github.io/ # Can be anyway
 theme: 
-    name material
+    name: material
+
+plugins:
+  mkdocs-jupyter:
+    #execute_notebooks: true  # will run the notebooks
+    execute: true
+    allow_errors: false  # fail build if notebook fails, can be useful as a "test"
